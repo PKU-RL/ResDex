@@ -11,7 +11,7 @@ python train.py \
 --base_obs_num=153 \
 --residual_obs_num=88 \
 --test \
---model_dir=logs/residual/4/lift/test_seed0/model_20000.pt \
+--model_dir=checkpoints/res/4/state_model.pt \
 # --headless \
 # --save_test_traj \
 # --model_dir=logs/test_seed0/model_10000.pt \
