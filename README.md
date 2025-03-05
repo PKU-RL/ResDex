@@ -1,8 +1,10 @@
 # ResDex
 
 Official code for **"Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping"** *(ICLR 2025)*
-![Paper Overview](fig/framework.png)  
+
+![Demo](fig/demo.gif)
 *For detailed information, please refer to our [paper](https://openreview.net/pdf?id=BUj9VSCoET).*
+
 
 ## Installation
 
