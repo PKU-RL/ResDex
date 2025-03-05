@@ -69,6 +69,8 @@ class DAGGER:
         self.schedule = schedule
         self.step_size = learning_rate
 
+        self.is_testing = is_testing
+
         # DAGGER components
         self.buffer_size = buffer_size
         self.vec_env = vec_env
@@ -82,30 +84,30 @@ class DAGGER:
 
 
 
-        ################### create 5 base models and 1 residual hyper model ##################
-        base_model_list_dir = "4_means.yaml" 
-        base_model_list = yaml.load(open(base_model_list_dir, 'r'), Loader=yaml.FullLoader)["base_model_list"]
-        self.base_models=[]
-        for base_model_dir in base_model_list:
-            base_model = actor_critic_class([153],  self.state_space.shape, self.action_space.shape,
-                                                  init_noise_std, model_cfg, asymmetric=asymmetric, use_pc=False)
-            base_model.to(self.device)
-            base_model.load_state_dict(torch.load(base_model_dir,map_location=self.device))
-            base_model.eval()
-            for param in base_model.parameters():
-                param.requires_grad = False
-            self.base_models.append(base_model)
-            print("#"*10, "base model loaded from: ", base_model_dir, "#"*10)
-        
-        residual_model_dir = "logs/residual/4/lift/test_seed2/model_20000.pt"
-        self.residual_model = actor_critic_class([227],self.state_space.shape, [len(self.base_models)+24],
+        if not self.is_testing:        
+            base_model_list_dir = "4_means.yaml" 
+            base_model_list = yaml.load(open(base_model_list_dir, 'r'), Loader=yaml.FullLoader)["base_model_list"]
+            self.base_models=[]
+            for base_model_dir in base_model_list:
+                base_model = actor_critic_class([153],  self.state_space.shape, self.action_space.shape,
                                                     init_noise_std, model_cfg, asymmetric=asymmetric, use_pc=False)
-        self.residual_model.to(self.device)
-        self.residual_model.load_state_dict(torch.load(residual_model_dir, map_location=self.device))
-        self.residual_model.eval()
-        for param in self.residual_model.parameters():
-                param.requires_grad = False
-        self.softmax = nn.Softmax(dim=-1)
+                base_model.to(self.device)
+                base_model.load_state_dict(torch.load(base_model_dir,map_location=self.device))
+                base_model.eval()
+                for param in base_model.parameters():
+                    param.requires_grad = False
+                self.base_models.append(base_model)
+                print("#"*10, "base model loaded from: ", base_model_dir, "#"*10)
+            
+            residual_model_dir = "logs/residual/4/lift/test_seed2/model_20000.pt"
+            self.residual_model = actor_critic_class([227],self.state_space.shape, [len(self.base_models)+24],
+                                                        init_noise_std, model_cfg, asymmetric=asymmetric, use_pc=False)
+            self.residual_model.to(self.device)
+            self.residual_model.load_state_dict(torch.load(residual_model_dir, map_location=self.device))
+            self.residual_model.eval()
+            for param in self.residual_model.parameters():
+                    param.requires_grad = False
+            self.softmax = nn.Softmax(dim=-1)
         
 
 
@@ -124,7 +126,7 @@ class DAGGER:
         self.writer = SummaryWriter(log_dir=self.log_dir, flush_secs=10)
         self.tot_timesteps = 0
         self.tot_time = 0
-        self.is_testing = is_testing
+
         self.current_learning_iteration = 0
 
         self.apply_reset = apply_reset
