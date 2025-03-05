@@ -29,9 +29,13 @@ pip install -r requirements.txt
 ```
 
 ### 5. Install PointNet2:
+You can download PointNet2 [here](https://disk.pku.edu.cn/link/AA3F49C82F397249CB83955009C32970CB).
 ```bash
-cd third_party/pointnet2
-python setup.py install
+unzip Pointnet2_PyTorch-master.zip
+cd Pointnet2_PyTorch-master
+pip install -e .
+cd pointnet2_ops_lib
+pip install -e .
 ```
 
 ## Data Preparation
