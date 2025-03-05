@@ -1,0 +1,74 @@
+ base_model_list: [
+  #######   handcrafted reward   #######
+  # "model/base_model/with_objpos/bowl_5000.pt",
+  # "model/base_model/with_objpos/fooditem_5000.pt",
+  # "model/base_model/with_objpos/pencil_5000.pt",
+  # "model/base_model/with_objpos/pistol_5000.pt",
+  # "model/base_model/with_objpos/bowl2_5000.pt",
+  # "model/base_model/with_objpos/cellphone_5000.pt",
+
+  #######   use qpos in graps ######
+  # "model/base_model/with_objpos/with_grasp_pose/bottle_5000.pt",
+  # "model/base_model/with_objpos/with_grasp_pose/fooditem_5000.pt",
+  # "model/base_model/with_objpos/with_grasp_pose/pencil_5000.pt",
+  # "model/base_model/with_objpos/with_grasp_pose/camera_10000.pt",
+  # "model/base_model/with_objpos/with_grasp_pose/bowl_5000.pt",
+  # "model/base_model/with_objpos/with_grasp_pose/cellphone2_5000.pt",
+  # ##################### 5 means STATE0 #####################
+  # "model/base_model/5-means/bottle_5000.pt",
+  # "model/base_model/5-means/mug_5000.pt",
+  # "model/base_model/5-means/pistol2_5000.pt",
+  # "model/base_model/5-means/toiletpaper_5000.pt",
+  # "model/base_model/5-means/toyfigure_5000.pt",
+
+  ########################## real 5 means state 0 ################3
+  "model/base_model/5-means/core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08.pt",
+  "model/base_model/5-means/sem/CellPhone-c2884eed47300891697f9662a764c78_0.06.pt",
+  "model/base_model/5-means/sem/ToiletPaper-accc37f006d7409d42428dd46e9da8_0.06.pt",
+  "model/base_model/5-means/sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06.pt",
+  "model/base_model/5-means/sem/VideoGameConsole-f732c387a9edad30998b772595cc99e5_0.06.pt",
+
+  ################## 5MEANS RANDOM STATE1#################
+  # "model/base_model/5-means/core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08.pt",
+  # "model/base_model/5-means/core/cellphone-7114283643761bb4a5545c1d5c84020a_0.06.pt",
+  # "model/base_model/5-means/core/mug-c7ddd93b15e30faae180a52fd2be32_0.08.pt",
+  # "model/base_model/5-means/sem/TableClock-667f4b67f95790b975ffe5b08493cffc_0.08.pt",
+  # "model/base_model/5-means/sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06.pt",
+
+  #################### 5MEANS RANDOM STATE2 ################
+# "model/base_model/5-means/core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08.pt",
+# "model/base_model/5-means/core/cellphone-7114283643761bb4a5545c1d5c84020a_0.06.pt",
+# "model/base_model/5-means/core/mug-c7ddd93b15e30faae180a52fd2be32_0.08.pt",
+# "model/base_model/5-means/sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06.pt",
+# "model/base_model/5-means/sem/VideoGameConsole-f732c387a9edad30998b772595cc99e5_0.06.pt",
+  #################### 8-means ########################
+  # "model/base_model/8-means/sem/ToyFigure-2180c4770b8c4fce951b9c885c695a12_0.06.pt",
+  # "model/base_model/8-means/sem/CellPhone-c2884eed47300891697f9662a764c78_0.06.pt",
+  # "model/base_model/8-means/sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06.pt",
+  # "model/base_model/8-means/sem/Truck-5502f76ce18c9059578b14cd14f51f45_0.08.pt",
+  # "model/base_model/8-means/core/pistol-378c3f18cf130bace1f2a1daf140ac9f_0.08.pt",
+  # "model/base_model/8-means/core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06.pt",
+  # "model/base_model/8-means/core/can-3fd196c22459cc66c8687ff9b0b4e4ac_0.06.pt",
+  # "model/base_model/8-means/core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08.pt",
+
+  ####################### 4 means #####################
+  # "model/base_model/4-means/core/bottle-d1792ebb96fe73ff30612f5c0ef21eb8_0.06.pt",
+  # "model/base_model/4-means/core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06.pt",
+  # "model/base_model/4-means/sem/PillBottle-6230f6c8fb4987db4489e8d156e61135_0.06.pt",
+  # "model/base_model/4-means/core/pistol-afa2048d3da423ed3f5d17ee01b81759_0.08.pt",
+
+  #################### 3 means #########################
+  # "model/base_model/3-means/core/bottle-d1792ebb96fe73ff30612f5c0ef21eb8_0.06.pt",
+  # "model/base_model/3-means/core/mug-c7ddd93b15e30faae180a52fd2be32_0.08.pt",
+  # "model/base_model/3-means/sem/PillBottle-6230f6c8fb4987db4489e8d156e61135_0.06.pt",
+  #
+
+   ##################### 4-means ##################
+#   "logs/4/0/test_seed0/model_5000.pt",
+#   "logs/4/1/test_seed0/model_5000.pt",
+#   "logs/4/2/test_seed0/model_5000.pt",
+#   "logs/4/3/test_seed0/model_5000.pt",
+#
+######################3 6 means  ################3#
+
+ ]

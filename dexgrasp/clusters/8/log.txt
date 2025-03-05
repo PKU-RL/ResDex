@@ -1,0 +1,66 @@
+Start training the model with  8  clusters!
+----------------------------------
+Training object:  {'sem/ToyFigure-2180c4770b8c4fce951b9c885c695a12': [0.06]}
+Model already exists:  model/base_model/8-means/sem/ToyFigure-2180c4770b8c4fce951b9c885c695a12_0.06.pt
+The success rate is:  0.994140625
+----------------------------------
+sem/ToyFigure-2180c4770b8c4fce951b9c885c695a12_0.06 0.994140625
+The model is good enough, the success rate is:  0.994140625
+----------------------------------
+Training object:  {'core/can-3fd196c22459cc66c8687ff9b0b4e4ac': [0.06]}
+Model already exists:  model/base_model/8-means/core/can-3fd196c22459cc66c8687ff9b0b4e4ac_0.06.pt
+The success rate is:  0.985107421875
+----------------------------------
+core/can-3fd196c22459cc66c8687ff9b0b4e4ac_0.06 0.985107421875
+The model is good enough, the success rate is:  0.985107421875
+----------------------------------
+Training object:  {'sem/CellPhone-c2884eed47300891697f9662a764c78': [0.06]}
+Model already exists:  model/base_model/8-means/sem/CellPhone-c2884eed47300891697f9662a764c78_0.06.pt
+The success rate is:  0.9560546875
+----------------------------------
+sem/CellPhone-c2884eed47300891697f9662a764c78_0.06 0.9560546875
+The model is good enough, the success rate is:  0.9560546875
+----------------------------------
+Training object:  {'core/mug-928a383f79698c3fb6d9bc28c8d8a2c4': [0.06]}
+Model saved to:  model/base_model/8-means/core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06.pt
+----------------------------------
+core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06 0.984130859375
+The model is good enough, the success rate is:  0.984130859375
+----------------------------------
+Training object:  {'core/bottle-634c59bf37676ca64c3a35cee92bb95b': [0.08]}
+Model saved to:  model/base_model/8-means/core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08.pt
+----------------------------------
+core/bottle-634c59bf37676ca64c3a35cee92bb95b_0.08 0.9736328125
+The model is good enough, the success rate is:  0.9736328125
+----------------------------------
+Training object:  {'sem/Truck-5502f76ce18c9059578b14cd14f51f45': [0.08]}
+Model saved to:  model/base_model/8-means/sem/Truck-5502f76ce18c9059578b14cd14f51f45_0.08.pt
+----------------------------------
+sem/Truck-5502f76ce18c9059578b14cd14f51f45_0.08 0.962158203125
+The model is good enough, the success rate is:  0.962158203125
+----------------------------------
+Training object:  {'core/pistol-2eca5fa283b317c7602717bb378973f1': [0.08]}
+Model saved to:  model/base_model/8-means/core/pistol-2eca5fa283b317c7602717bb378973f1_0.08.pt
+----------------------------------
+core/pistol-2eca5fa283b317c7602717bb378973f1_0.08 0.0
+The model is not good enough, please retrain the model!
+----------------------------------
+Training object:  {'core/pistol-1c5d487fd6ab7ee88be2a30dd556a09': [0.08]}
+Model saved to:  model/base_model/8-means/core/pistol-1c5d487fd6ab7ee88be2a30dd556a09_0.08.pt
+----------------------------------
+core/pistol-1c5d487fd6ab7ee88be2a30dd556a09_0.08 0.10498046875
+The model is not good enough, please retrain the model!
+----------------------------------
+Training object:  {'core/pistol-378c3f18cf130bace1f2a1daf140ac9f': [0.08]}
+Model saved to:  model/base_model/8-means/core/pistol-378c3f18cf130bace1f2a1daf140ac9f_0.08.pt
+----------------------------------
+core/pistol-378c3f18cf130bace1f2a1daf140ac9f_0.08 0.829833984375
+The model is good enough, the success rate is:  0.829833984375
+----------------------------------
+Training object:  {'sem/ToyFigure-c316443737330629ff4bf5889ecc03a5': [0.06]}
+Model saved to:  model/base_model/8-means/sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06.pt
+----------------------------------
+sem/ToyFigure-c316443737330629ff4bf5889ecc03a5_0.06 0.9833984375
+The model is good enough, the success rate is:  0.9833984375
+----------------------------------
+All models are trained and saved!

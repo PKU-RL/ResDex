@@ -1,0 +1,39 @@
+Start training the model with  4  clusters!
+----------------------------------
+Training object:  {'sem/PillBottle-6230f6c8fb4987db4489e8d156e61135': [0.06]}
+Model saved to:  model/base_model/4-means/sem/PillBottle-6230f6c8fb4987db4489e8d156e61135_0.06.pt
+----------------------------------
+sem/PillBottle-6230f6c8fb4987db4489e8d156e61135_0.06 0.9765625
+The model is good enough, the success rate is:  0.9765625
+----------------------------------
+Training object:  {'core/mug-928a383f79698c3fb6d9bc28c8d8a2c4': [0.06]}
+Model saved to:  model/base_model/4-means/core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06.pt
+----------------------------------
+core/mug-928a383f79698c3fb6d9bc28c8d8a2c4_0.06 0.984130859375
+The model is good enough, the success rate is:  0.984130859375
+----------------------------------
+Training object:  {'core/bottle-d1792ebb96fe73ff30612f5c0ef21eb8': [0.06]}
+Model saved to:  model/base_model/4-means/core/bottle-d1792ebb96fe73ff30612f5c0ef21eb8_0.06.pt
+----------------------------------
+core/bottle-d1792ebb96fe73ff30612f5c0ef21eb8_0.06 0.984619140625
+The model is good enough, the success rate is:  0.984619140625
+----------------------------------
+Training object:  {'core/pistol-4648980f23149150edfe35c9179614ca': [0.08]}
+Model saved to:  model/base_model/4-means/core/pistol-4648980f23149150edfe35c9179614ca_0.08.pt
+----------------------------------
+core/pistol-4648980f23149150edfe35c9179614ca_0.08 0.7626953125
+The model is not good enough, please retrain the model!
+----------------------------------
+Training object:  {'core/pistol-2eca5fa283b317c7602717bb378973f1': [0.08]}
+Model saved to:  model/base_model/4-means/core/pistol-2eca5fa283b317c7602717bb378973f1_0.08.pt
+----------------------------------
+core/pistol-2eca5fa283b317c7602717bb378973f1_0.08 0.0
+The model is not good enough, please retrain the model!
+----------------------------------
+Training object:  {'core/pistol-afa2048d3da423ed3f5d17ee01b81759': [0.08]}
+Model saved to:  model/base_model/4-means/core/pistol-afa2048d3da423ed3f5d17ee01b81759_0.08.pt
+----------------------------------
+core/pistol-afa2048d3da423ed3f5d17ee01b81759_0.08 0.932373046875
+The model is good enough, the success rate is:  0.932373046875
+----------------------------------
+All models are trained and saved!

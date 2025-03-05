@@ -1,0 +1,100 @@
+{
+    "robots": [
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_spheres_collision.urdf"
+            ],
+            "variant": "spheres collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 251
+        },
+        {
+            "name": "Dual LBR iiwa 14",
+            "type": "dual arm robot",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/dual_iiwa14_polytope_collision.urdf"
+            ],
+            "variant": "polytope collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 252
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_no_collision.urdf"
+            ],
+            "variant": "no collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 253
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_polytope_collision.urdf"
+            ],
+            "variant": "polytope collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 254
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_primitive_collision.urdf"
+            ],
+            "variant": "primitive collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 255
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_spheres_dense_collision.urdf"
+            ],
+            "variant": "spheres dense collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 256
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/iiwa14_spheres_dense_elbow_collision.urdf"
+            ],
+            "variant": "spheres dense elbow collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 257
+        },
+        {
+            "name": "LBR iiwa 14",
+            "type": "robotic arm",
+            "manufacturer": "KUKA",
+            "xacro-generated": false,
+            "urdf": [
+                "urdf/planar_iiwa14_spheres_dense_elbow_collision.urdf"
+            ],
+            "variant": "planar spheres dense elbow collision",
+            "source-link": "https://github.com/RobotLocomotion/drake/tree/a037acf09ae797fb1d4ea850dd847337a98b7f26/manipulation/models/iiwa_description",
+            "id": 258
+        }
+    ]
+}
