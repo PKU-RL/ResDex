@@ -67,9 +67,7 @@ class Residual:
         self.save_test_traj = save_test_traj
         self.is_vision = is_vision
         self.base_obs_space = [base_obs_num]
-        # self.residual_obs_space = [147+64+16+29]
         self.residual_obs_space = [147+64+16]
-        # self.residual_obs_space = [64]
 
         if not isinstance(vec_env.observation_space, Space):
             raise TypeError("vec_env.observation_space must be a gym Space")

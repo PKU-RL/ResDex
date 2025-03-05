@@ -99,7 +99,7 @@ class DAGGER:
                 self.base_models.append(base_model)
                 print("#"*10, "base model loaded from: ", base_model_dir, "#"*10)
             
-            residual_model_dir = "logs/residual/4/lift/test_seed2/model_20000.pt"
+            residual_model_dir = "checkpoints/res/4/state_model.pt"
             self.residual_model = actor_critic_class([227],self.state_space.shape, [len(self.base_models)+24],
                                                         init_noise_std, model_cfg, asymmetric=asymmetric, use_pc=False)
             self.residual_model.to(self.device)
