@@ -48,20 +48,22 @@ assets/
 ├── pcldata/
 ├── ......
 ```
-We provide an example object in `assets`. 3200 training objects are specified in `train_set.yaml`. The testing objects are specified in `test_set_seen_cat.yaml` and `test_set_unseen_cat.yaml`. You can download the complete dataset [here](https://mirrors.pku.edu.cn/dl-release/UniDexGrasp_CVPR2023/dexgrasp_policy/assets/) for `datasetv4.1`, `meshdatav3_pc_feat` and `meshdatav3_scaled`.
-After downloading `meshdatav3_scaled` and put it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
+We provide an example object in `assets`. 3200 training objects are specified in `train_set.yaml`. The testing objects are specified in `test_set_seen_cat.yaml` and `test_set_unseen_cat.yaml`. You can change the objects used for training and evaluation in `cfg/shadow_hand_*.yaml`.
+
+ You can download the complete dataset [here](https://mirrors.pku.edu.cn/dl-release/UniDexGrasp_CVPR2023/dexgrasp_policy/assets/) for `datasetv4.1`, `meshdatav3_pc_feat` and `meshdatav3_scaled`.
+After downloading `meshdatav3_scaled` and putting it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
 ```bash
 python script/preprocess_pcl.py
 ```
 
 ## Training & Evaluation
 
-**Base Policy:**
+**To train a base policy:**
 ```bash
 bash script/train_blind.sh
 ```
 
-**Residual Policy:**
+**To train a residual policy:**
 ```bash
 bash script/train_residual.sh
 ```
