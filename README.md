@@ -50,7 +50,7 @@ assets/
 ```
 We provide an example object in `assets`. 3200 training objects are specified in `train_set.yaml`. The testing objects are specified in `test_set_seen_cat.yaml` and `test_set_unseen_cat.yaml`. You can download the complete dataset [here](https://mirrors.pku.edu.cn/dl-release/UniDexGrasp_CVPR2023/dexgrasp_policy/assets/) for `datasetv4.1`, `meshdatav3_pc_feat` and `meshdatav3_scaled`.
 After downloading `meshdatav3_scaled` and put it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
-```python
+```bash
 python script/preprocess_pcl.py
 ```
 
