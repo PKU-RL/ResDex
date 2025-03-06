@@ -39,7 +39,7 @@ pip install -e .
 ```
 
 ## Data Preparation
-The datasets are organized as:
+The dataset is organized as:
 ```
 assets/
 ├── datasetv4.1/
