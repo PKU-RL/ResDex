@@ -39,43 +39,50 @@ pip install -e .
 ```
 
 ## Data Preparation
-Download dataset from [here](INSERT_DATA_LINK_HERE) and organize as:
+The datasets are organized as:
 ```
 assets/
-├── objects/
-├── grasps/
-└── annotations/
+├── datasetv4.1/
+├── meshdatav3_pc_feat/
+├── meshdatav3_scaled/
+├── pcldata/
+├── ......
+```
+We provide an example object in `assets`. 3200 training objects are specified in `train_set.yaml`. The testing objects are specified in `test_set_seen_cat.yaml` and `test_set_unseen_cat.yaml`. You can download the complete dataset [here](https://mirrors.pku.edu.cn/dl-release/UniDexGrasp_CVPR2023/dexgrasp_policy/assets/) for `datasetv4.1`, `meshdatav3_pc_feat` and `meshdatav3_scaled`.
+After download `meshdatav3_scaled` and put it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
+```python
+python script/preprocess_pcl.py
 ```
 
 ## Training & Evaluation
 
 **Base Policy:**
 ```bash
-bash scripts/train_blind.sh
+bash script/train_blind.sh
 ```
 
 **Residual Policy:**
 ```bash
-bash scripts/train_residual.sh
+bash script/train_residual.sh
 ```
 
 **Evaluation:**
 ```bash
 # Base policy
-bash scripts/test_blind.sh
+bash script/test_blind.sh
 
 # Residual policy
-bash scripts/test_residual.sh
+bash script/test_residual.sh
 ```
 
 **DAGGER Distillation:**
 ```bash
-bash scripts/train_dagger_vision.sh
+bash script/train_dagger_vision.sh
 ```
 
 **Vision Policy Evaluation:**
 ```bash
-bash scripts/test_dagger_vision.sh
+bash script/test_dagger_vision.sh
 ```
 
 ## Acknowledgement
