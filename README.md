@@ -21,7 +21,7 @@ conda activate resdex
 ```
 
 ### 3. Install IsaacGym
-Download Isaac Gym Preview 4 [here](https://developer.nvidia.com/isaac-gym-preview-4) and following the installation document.
+Download Isaac Gym Preview 4 [here](https://developer.nvidia.com/isaac-gym-preview-4) and follow the installation document.
 
 ### 4. Install dependencies:
 ```bash
@@ -49,7 +49,7 @@ assets/
 ├── ......
 ```
 We provide an example object in `assets`. 3200 training objects are specified in `train_set.yaml`. The testing objects are specified in `test_set_seen_cat.yaml` and `test_set_unseen_cat.yaml`. You can download the complete dataset [here](https://mirrors.pku.edu.cn/dl-release/UniDexGrasp_CVPR2023/dexgrasp_policy/assets/) for `datasetv4.1`, `meshdatav3_pc_feat` and `meshdatav3_scaled`.
-After download `meshdatav3_scaled` and put it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
+After downloading `meshdatav3_scaled` and put it to the corresponding place in `assets`, you can get `pcldata` by running the following command:
 ```python
 python script/preprocess_pcl.py
 ```
@@ -66,6 +66,11 @@ bash script/train_blind.sh
 bash script/train_residual.sh
 ```
 
+**Dagger Distillation:**
+```bash
+bash script/train_dagger_vision.sh
+```
+
 **Evaluation:**
 ```bash
 # Base policy
@@ -73,15 +78,8 @@ bash script/test_blind.sh
 
 # Residual policy
 bash script/test_residual.sh
-```
 
-**DAGGER Distillation:**
-```bash
-bash script/train_dagger_vision.sh
-```
-
-**Vision Policy Evaluation:**
-```bash
+# Vision policy
 bash script/test_dagger_vision.sh
 ```
 

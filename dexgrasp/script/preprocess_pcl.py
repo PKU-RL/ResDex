@@ -1,5 +1,9 @@
+
 import numpy as np
 import os, sys
+# add ../ to the path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from utils.util import get_pointcloud_from_mesh
 import yaml
 
