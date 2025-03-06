@@ -532,7 +532,6 @@ class ShadowHandResidualGrasp(BaseTask):
             scale_id = self.scale2id[scale]
             self.object_scale_buf[i] = scale
             self.object_id_buf[i] = id
-            print("env: ", i, "object_code: ", object_code, "scale", scale)
             self.visual_feat_buf[i] = self.visual_feat_data[id][scale_id]
 
             # add object
