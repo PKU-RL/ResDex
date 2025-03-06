@@ -85,5 +85,16 @@ bash script/test_residual.sh
 bash script/test_dagger_vision.sh
 ```
 
-## Acknowledgement
-This project is built upon [UnidexGrasp](https://github.com/PKU-EPIC/UniDexGrasp).
+## Citation
+If you find this code useful, please cite our paper:
+```bibtex
+@inproceedings{
+huang2025efficient,
+title={Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping},
+author={Ziye Huang and Haoqi Yuan and Yuhui Fu and Zongqing Lu},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=BUj9VSCoET}
+}
+```
+Our implementation is based on [UnidexGrasp](https://github.com/PKU-EPIC/UniDexGrasp).
