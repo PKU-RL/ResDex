@@ -64,9 +64,17 @@ bash script/train_blind.sh
 ```
 
 **To train a residual policy:**
+First stage training:
 ```bash
 bash script/train_residual.sh
 ```
+
+Second stage training:
+Change the `goal_cond` parameter in `shadow_hand_residual_grasp.yaml` to `False` and run the command:
+```bash
+bash script/train_residual.sh
+```
+
 
 **Dagger Distillation:**
 ```bash
