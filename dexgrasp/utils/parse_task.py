@@ -10,7 +10,7 @@ from tasks.shadow_hand_random_load_vision import ShadowHandRandomLoadVision
 from tasks.shadow_hand_blind_grasp import ShadowHandBlindGrasp
 from tasks.shadow_hand_residual_grasp import ShadowHandResidualGrasp
 from tasks.shadow_hand_pcl import ShadowHandPcl
-from tasks.allegro_hand_blind_grasp import AllegroHandBlindGrasp
+# from tasks.allegro_hand_blind_grasp import AllegroHandBlindGrasp
 
 from tasks.hand_base.vec_task import VecTaskCPU, VecTaskGPU, VecTaskPython, VecTaskPythonArm
 
